@@ -9,7 +9,7 @@ else
 	CHECKFLAGS = -lcheck -lpthread -lrt -lm -lsubunit
 endif
 
-all: clean my_c_matrix.a
+all: clean test
 
 my_c_matrix.a: 
 	$(CC) $(CFLAGS) -c my_c_matrix.c -o my_c_matrix.o
